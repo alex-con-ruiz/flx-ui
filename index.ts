@@ -1,1 +1,1 @@
-export * from './modules/card'
+export * from './modules/Card'

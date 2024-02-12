@@ -1,8 +1,8 @@
 import React from 'react';
-import { styleContext } from './context';
+import { styleContext } from '../context';
 import './styles.css';
 
-import { CardProps, ChildToRender } from './interfaces';
+import { CardProps, ChildToRender } from '../interfaces';
 
 export const Card = ({ children, id, customClassName, borderAccent, paddingSize, shadow = 'flat' }: CardProps) => {
 	// Child Managemnt
