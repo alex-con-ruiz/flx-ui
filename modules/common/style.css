@@ -1,29 +1,104 @@
+* {
+    /* Alphas */
+    --alpha10: 0.10;
+    --alpha20: 0.20;
+    --alpha30: 0.30;
+    --alpha40: 0.40;
+    --alpha50: 0.50;
+    --alpha60: 0.60;
+    --alpha70: 0.70;
+    --alpha80: 0.80;
+    --alpha90: 0.90;
+
+    /* Theme */
+    /* Light */
+    --picker: hsl(184, 60%, 43%);
+    --primary-hue: 184;
+    --primary-staturation: 60%;
+    --primary-luminosity: 50%;
+    --primary-hsl: var(--primary-hue), var(--primary-staturation), var(--primary-luminosity);
+
+    /* text colors */
+    --text1-light: hsl(var(--primary-hue) var(--primary-staturation) 10%);
+    --text2-light: hsl(var(--primary-hue) 30% 30%);
+
+    /* Surfeces */
+    --surface1-light: hsl(var(--primary-hue) 20% 99%);
+    --surface2-light: hsl(var(--primary-hue) 20% 92%);
+    --surface3-light: hsl(var(--primary-hue) 25% 90%);
+    --surface4-light: hsl(var(--primary-hue) 20% 85%);
+    --surface-border-light: hsl(var(--primary-hue) 10% 85%);
+
+    /* Dark */
+    --primary-hsl-dark: var(--primary-hue), calc(var(--primary-staturation) / 2), calc(var(--primary-luminosity) * 1.3);
+
+     /* text colors dark*/
+     --text1-dark: hsl(var(--primary-hue) 15% 85%);
+     --text2-dark: hsl(var(--primary-hue) 5% 65%);
+ 
+     /* Surfeces */
+     --surface1-dark: hsl(var(--primary-hue) 10% 10%);
+     --surface2-dark: hsl(var(--primary-hue) 10% 15%);
+     --surface3-dark: hsl(var(--primary-hue) 5% 20%);
+     --surface4-dark: hsl(var(--primary-hue) 5% 25%);
+     --surface-border-dark: hsl(var(--primary-hue) 10% 30%);
+
+     font-size: calc(15px + 0.390625vw);
+}
+
 :root{
-    /* colors */
-    --white: #fff;
-    --light-gray: #dfdfdf;
-    --accent: #4848b9;
-    --accent20: #4848b910;
+    color-scheme: light;
 
     /* state color */
-    --info-color: #4848b9;
-    --success-color: #75b948;
-    --warning-color: #e08d3b;
-    --error-color: #d03f3f;
+    --info-color: hsl(240, 45%, 50%);
+    --success-color: hsl(96, 45%, 50%);
+    --warning-color: hsl(30, 73%, 55%);
+    --error-color: hsl(0, 61%, 53%);
 
     /* sizes */
+    font-size: calc(15px + 0.390625vw);
     --max-width: 1280px;
 
     /* margins paddings */
-    --defautl-margin: 16px;
+    --defautl-margin: 24px;
     --defautl-padding: 16px;
     --border-rounded: 6px;
 
+
     /* Fonts */
-    --big-title: 24px;
-    --title: 16px;
-    --paragraph: 14px;
+    --big-title: 1.2rem;
+    --title: .9rem;
+    --paragraph: .8rem;
 }
+
+@media (prefers-color-scheme: light) {
+    :root{
+        color-scheme: light; 
+        
+        /* colors */
+        --background: var(--surface1-light);
+        --border: var(--surface-border-light);
+
+        --accent: hsla(var(--primary-hsl), var(--alpha90));
+        --accent10: hsla(var(--primary-hsl), var(--alpha10));
+        color: var(--text1-light);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        color-scheme: dark;
+
+        /* colors */
+        --background: var(--surface2-dark);
+        --border: var(--surface-border-dark);
+
+        --accent: hsla(var(--primary-hsl-dark), var(--alpha90));
+        --accent10: hsla(var(--primary-hsl-dark), var(--alpha10));
+        color: var(--text1-dark);
+    }
+}
+
 
 *{
     padding: 0;

@@ -2,14 +2,14 @@
 
 .flx-card {
     display: block;
-    border: 1px solid var(--light-gray);
-    background-color: var(--white);
+    border: 1px solid var(--border);
+    background-color: var(--background);
     width: 100%;
     height: auto;
     border-radius: var(--border-rounded);
     margin-bottom: var(--defautl-margin);
     max-width: var(--max-width);
-
+  
     h1{
         font-size: var(--big-title);
     }

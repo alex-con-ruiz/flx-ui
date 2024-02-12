@@ -1,5 +1,5 @@
 
 .flx-card__header{
     padding: 16px;
-    border-bottom: 1px solid rgb(225 225 225);
+    border-bottom: 1px solid var(--border);
 }
