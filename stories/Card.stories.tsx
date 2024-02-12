@@ -149,8 +149,8 @@ export const withFooter: Story = {
 		<CardContent>
 			<span>This is a Card and can be used to order o hightlight infomation on your page</span>
 		</CardContent>
-		<CardFooter link={{href: 'https//:www.google.com',text: 'Link to href', isBlank: true}}>
-			Footer
+		<CardFooter>
+			<span>Footer</span>
 		</CardFooter>
 	</Card>,
 };
@@ -161,7 +161,7 @@ export const withHeaderAndFooter: Story = {
 		<CardContent>
 			<span>This is a Card and can be used to order o hightlight infomation on your page</span>
 		</CardContent>
-		<CardFooter link={{href: 'https//:www.google.com',text: 'Link to href', isBlank: true}}></CardFooter>
+		<CardFooter link={{ href: 'https//:www.google.com', text: 'Link to href', isBlank: true }}></CardFooter>
 	</Card>,
 };
 
