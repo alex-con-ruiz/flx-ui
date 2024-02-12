@@ -1,4 +1,8 @@
 * {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
     /* Alphas */
     --alpha10: 0.10;
     --alpha20: 0.20;
@@ -11,8 +15,9 @@
     --alpha90: 0.90;
 
     /* Theme */
+
     /* Light */
-    --picker: hsl(184, 60%, 43%);
+    --picker: hsl(184deg 60% 43%);
     --primary-hue: 184;
     --primary-staturation: 60%;
     --primary-luminosity: 50%;
@@ -32,7 +37,7 @@
     /* Dark */
     --primary-hsl-dark: var(--primary-hue), calc(var(--primary-staturation) / 2), calc(var(--primary-luminosity) * 1.3);
 
-     /* text colors dark*/
+     /* text colors dark */
      --text1-dark: hsl(var(--primary-hue) 15% 85%);
      --text2-dark: hsl(var(--primary-hue) 5% 65%);
  
@@ -43,20 +48,21 @@
      --surface4-dark: hsl(var(--primary-hue) 5% 25%);
      --surface-border-dark: hsl(var(--primary-hue) 10% 30%);
 
-     font-size: calc(15px + 0.390625vw);
+     font-size: calc(15px + 0.3906vw);
 }
 
 :root{
     color-scheme: light;
 
     /* state color */
-    --info-color: hsl(240, 45%, 50%);
-    --success-color: hsl(96, 45%, 50%);
-    --warning-color: hsl(30, 73%, 55%);
-    --error-color: hsl(0, 61%, 53%);
+    --info-color: hsl(240deg 45% 50%);
+    --success-color: hsl(96deg 45% 50%);
+    --warning-color: hsl(30deg 73% 55%);
+    --error-color: hsl(0deg 61% 53%);
 
     /* sizes */
-    font-size: calc(15px + 0.390625vw);
+    font-size: calc(15px + 0.3906vw);
+
     --max-width: 1280px;
 
     /* margins paddings */
@@ -78,9 +84,9 @@
         /* colors */
         --background: var(--surface1-light);
         --border: var(--surface-border-light);
+        --accent: hsl(var(--primary-hsl) var(--alpha90));
+        --accent10: hsl(var(--primary-hsl) var(--alpha10));
 
-        --accent: hsla(var(--primary-hsl), var(--alpha90));
-        --accent10: hsla(var(--primary-hsl), var(--alpha10));
         color: var(--text1-light);
     }
 }
@@ -92,16 +98,9 @@
         /* colors */
         --background: var(--surface2-dark);
         --border: var(--surface-border-dark);
+        --accent: hsl(var(--primary-hsl-dark) var(--alpha90));
+        --accent10: hsl(var(--primary-hsl-dark) var(--alpha10));
 
-        --accent: hsla(var(--primary-hsl-dark), var(--alpha90));
-        --accent10: hsla(var(--primary-hsl-dark), var(--alpha10));
         color: var(--text1-dark);
     }
-}
-
-
-*{
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }

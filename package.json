@@ -11,8 +11,8 @@
     "@storybook/react": "^7.6.13",
     "@storybook/react-vite": "^7.6.13",
     "@storybook/test": "^7.6.13",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
     "bun-types": "latest",
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
@@ -20,20 +20,18 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.6.13",
-    "stylelint": "^16.2.1"
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.0"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lintcss": "npx stylelint 'modules/**/*.css'"
-  },
-  "dependencies": {
-    "stylelint-config-standard": "^36.0.0"
   },
   "eslintConfig": {
     "extends": [
