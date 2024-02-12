@@ -1,0 +1,32 @@
+:root{
+    /* colors */
+    --white: #fff;
+    --light-gray: #dfdfdf;
+    --accent: #4848b9;
+    --accent20: #4848b910;
+
+    /* state color */
+    --info-color: #4848b9;
+    --success-color: #75b948;
+    --warning-color: #e08d3b;
+    --error-color: #d03f3f;
+
+    /* sizes */
+    --max-width: 1280px;
+
+    /* margins paddings */
+    --defautl-margin: 16px;
+    --defautl-padding: 16px;
+    --border-rounded: 6px;
+
+    /* Fonts */
+    --big-title: 24px;
+    --title: 16px;
+    --paragraph: 14px;
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}

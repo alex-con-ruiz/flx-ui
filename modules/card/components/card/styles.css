@@ -1,0 +1,41 @@
+@import url("../../../common/style.css");
+
+.flx-card {
+    display: block;
+    border: 1px solid var(--light-gray);
+    background-color: var(--white);
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-rounded);
+    margin-bottom: var(--defautl-margin);
+    max-width: var(--max-width);
+
+    h1{
+        font-size: var(--big-title);
+    }
+
+    h2{
+        font-size: var(--title);
+        margin: 0;
+    }
+
+    p, span, a {
+        font-size: var(--paragraph);
+    }
+    
+    .flx-card__content{
+        padding: var(--defautl-padding);
+    }
+}
+
+.flx-card__shadow--flat{
+    box-shadow: 0 1px 2px 0 #0000001f;
+}
+
+.flx-card__shadow--outline{
+    box-shadow: 0 0 0 0 #0000001f;
+}
+
+.flx-card__shadow--rised{
+    box-shadow: 3px 5px 10px 0 #0000001f;
+}

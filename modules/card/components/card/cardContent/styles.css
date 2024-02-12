@@ -1,0 +1,24 @@
+.flx-card__border--info,
+.flx-card__border--success,
+.flx-card__border--warning,
+.flx-card__border--error {
+    border-left: 6px solid;
+    transform: translateX(-1px);
+    border-radius: 6px;
+}
+
+.flx-card__border--header-sibling {
+    border-top-left-radius: 0;
+}
+
+.flx-card__border--footer-sibling {
+    border-bottom-left-radius: 0;
+}
+
+.flx-card__border--info { border-left-color: var(--info-color); }
+
+.flx-card__border--success { border-left-color: var(--success-color); }
+
+.flx-card__border--warning { border-left-color: var(--warning-color); }
+
+.flx-card__border--error { border-left-color: var(--error-color); }
