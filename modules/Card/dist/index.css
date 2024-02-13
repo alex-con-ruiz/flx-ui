@@ -59,8 +59,8 @@
     color-scheme: light;
     --background: var(--surface1-light);
     --border: var(--surface-border-light);
-    --accent: hsla(var(--primary-hsl) var(--alpha90));
-    --accent10: hsla(var(--primary-hsl) var(--alpha10));
+    --accent: hsla(var(--primary-hsl), var(--alpha90));
+    --accent10: hsla(var(--primary-hsl), var(--alpha10));
     color: var(--text1-light);
   }
 }
@@ -69,8 +69,8 @@
     color-scheme: dark;
     --background: var(--surface2-dark);
     --border: var(--surface-border-dark);
-    --accent: hsla(var(--primary-hsl-dark) var(--alpha90));
-    --accent10: hsla(var(--primary-hsl-dark) var(--alpha10));
+    --accent: hsla(var(--primary-hsl-dark), var(--alpha90));
+    --accent10: hsla(var(--primary-hsl-dark), var(--alpha10));
     color: var(--text1-dark);
   }
 }
