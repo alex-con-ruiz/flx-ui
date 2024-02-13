@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+}
+:root {
+  color-scheme: light;
   --alpha10: 0.10;
   --alpha20: 0.20;
   --alpha30: 0.30;
@@ -38,10 +41,6 @@
   --surface3-dark: hsl(var(--primary-hue) 5% 20%);
   --surface4-dark: hsl(var(--primary-hue) 5% 25%);
   --surface-border-dark: hsl(var(--primary-hue) 10% 30%);
-  font-size: calc(15px + 0.3906vw);
-}
-:root {
-  color-scheme: light;
   --info-color: hsl(240deg 45% 50%);
   --success-color: hsl(96deg 45% 50%);
   --warning-color: hsl(30deg 73% 55%);

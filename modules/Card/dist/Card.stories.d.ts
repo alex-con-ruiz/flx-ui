@@ -1,7 +1,8 @@
+import React from 'react';
 import type { StoryObj } from '@storybook/react';
 declare const meta: {
     title: string;
-    component: any;
+    component: ({ children, id, customClassName, borderAccent, paddingSize, shadow }: import("./interfaces").CardProps) => React.JSX.Element;
     parameters: {
         layout: string;
     };
