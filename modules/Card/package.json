@@ -26,5 +26,6 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "gitHead": "43570a22d5cbf943b660051eeaaf9bbd8b97dda1"
 }
