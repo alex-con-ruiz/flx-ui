@@ -3,10 +3,11 @@ import { nodeExternalsPlugin } from 'esbuild-node-externals';
 
 esbuild
 	.build({
-		entryPoints: ['./index.ts'],
-		outfile: 'dist/index.js',
+		entryPoints: ['./src/index.ts'],
+		outfile: 'build/index.js',
 		bundle: true,
 		minify: false,
+		minifyWhitespace: true,
 		treeShaking: true,
 		platform: 'node',
 		format: 'esm',
@@ -15,4 +16,5 @@ esbuild
 			nodeExternalsPlugin(),
 		],
 	})
+	// eslint-disable-next-line no-undef
 	.catch(() => process.exit(1));
