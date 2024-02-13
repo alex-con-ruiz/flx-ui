@@ -1,6 +1,6 @@
 {
-  "name": "flx-card",
-  "version": "0.0.3-alpha.5",
+  "name": "@flx-ui/card",
+  "version": "0.0.3-alpha.4",
   "description": "Card component",
   "type": "module",
   "scripts": {
@@ -29,3 +29,5 @@
   "types": "dist/index.d.ts",
   "gitHead": "7968e93029c87a90520f1da60af8bc6d83ab23e0"
 }
+
+
