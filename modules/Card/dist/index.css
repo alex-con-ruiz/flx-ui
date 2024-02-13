@@ -1,0 +1,166 @@
+/* ../common/style.css */
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  --alpha10: 0.10;
+  --alpha20: 0.20;
+  --alpha30: 0.30;
+  --alpha40: 0.40;
+  --alpha50: 0.50;
+  --alpha60: 0.60;
+  --alpha70: 0.70;
+  --alpha80: 0.80;
+  --alpha90: 0.90;
+  --picker: hsl(184deg 60% 43%);
+  --primary-hue: 184;
+  --primary-staturation: 60%;
+  --primary-luminosity: 50%;
+  --primary-hsl:
+    var(--primary-hue),
+    var(--primary-staturation),
+    var(--primary-luminosity);
+  --text1-light: hsl(var(--primary-hue) var(--primary-staturation) 10%);
+  --text2-light: hsl(var(--primary-hue) 30% 30%);
+  --surface1-light: hsl(var(--primary-hue) 20% 99%);
+  --surface2-light: hsl(var(--primary-hue) 20% 92%);
+  --surface3-light: hsl(var(--primary-hue) 25% 90%);
+  --surface4-light: hsl(var(--primary-hue) 20% 85%);
+  --surface-border-light: hsl(var(--primary-hue) 10% 85%);
+  --primary-hsl-dark:
+    var(--primary-hue),
+    calc(var(--primary-staturation) / 2),
+    calc(var(--primary-luminosity) * 1.3);
+  --text1-dark: hsl(var(--primary-hue) 15% 85%);
+  --text2-dark: hsl(var(--primary-hue) 5% 65%);
+  --surface1-dark: hsl(var(--primary-hue) 10% 10%);
+  --surface2-dark: hsl(var(--primary-hue) 10% 15%);
+  --surface3-dark: hsl(var(--primary-hue) 5% 20%);
+  --surface4-dark: hsl(var(--primary-hue) 5% 25%);
+  --surface-border-dark: hsl(var(--primary-hue) 10% 30%);
+  font-size: calc(15px + 0.3906vw);
+}
+:root {
+  color-scheme: light;
+  --info-color: hsl(240deg 45% 50%);
+  --success-color: hsl(96deg 45% 50%);
+  --warning-color: hsl(30deg 73% 55%);
+  --error-color: hsl(0deg 61% 53%);
+  font-size: calc(15px + 0.3906vw);
+  --max-width: 1280px;
+  --defautl-margin: 24px;
+  --defautl-padding: 16px;
+  --border-rounded: 6px;
+  --big-title: 1.2rem;
+  --title: .9rem;
+  --paragraph: .8rem;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --background: var(--surface1-light);
+    --border: var(--surface-border-light);
+    --accent: hsl(var(--primary-hsl) var(--alpha90));
+    --accent10: hsl(var(--primary-hsl) var(--alpha10));
+    color: var(--text1-light);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --background: var(--surface2-dark);
+    --border: var(--surface-border-dark);
+    --accent: hsl(var(--primary-hsl-dark) var(--alpha90));
+    --accent10: hsl(var(--primary-hsl-dark) var(--alpha10));
+    color: var(--text1-dark);
+  }
+}
+
+/* cardBase/styles.css */
+.flx-card {
+  display: block;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-rounded);
+  margin-bottom: var(--defautl-margin);
+  max-width: var(--max-width);
+  h1 {
+    font-size: var(--big-title);
+  }
+  h2 {
+    font-size: var(--title);
+    margin: 0;
+  }
+  p,
+  span,
+  a {
+    font-size: var(--paragraph);
+  }
+  .flx-card__content {
+    padding: var(--defautl-padding);
+  }
+}
+.flx-card__shadow--flat {
+  box-shadow: 0 1px 2px 0 #0000001f;
+}
+.flx-card__shadow--outline {
+  box-shadow: 0 0 0 0 #0000001f;
+}
+.flx-card__shadow--rised {
+  box-shadow: 3px 5px 10px 0 #0000001f;
+}
+
+/* cardContent/styles.css */
+.flx-card__border--info,
+.flx-card__border--success,
+.flx-card__border--warning,
+.flx-card__border--error {
+  border-left: 6px solid;
+  transform: translateX(-1px);
+  border-radius: 6px;
+}
+.flx-card__border--header-sibling {
+  border-top-left-radius: 0;
+}
+.flx-card__border--footer-sibling {
+  border-bottom-left-radius: 0;
+}
+.flx-card__border--info {
+  border-left-color: var(--info-color);
+}
+.flx-card__border--success {
+  border-left-color: var(--success-color);
+}
+.flx-card__border--warning {
+  border-left-color: var(--warning-color);
+}
+.flx-card__border--error {
+  border-left-color: var(--error-color);
+}
+
+/* cardHeader/styles.css */
+.flx-card__header {
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* cardFooter/styles.css */
+.flx-card__footer {
+  padding: 16px;
+  border-top: 1px solid var(--border);
+  .flx-card__footer--link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--accent);
+  }
+}
+.flx-card__footer--hover:hover {
+  background-color: var(--accent10);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}

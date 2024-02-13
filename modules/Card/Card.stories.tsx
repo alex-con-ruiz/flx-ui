@@ -1,7 +1,8 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Card, CardContent, CardHeader, CardFooter } from './index';
+import {Card, CardContent, CardHeader, CardFooter } from './index';
+// import { Card, CardContent, CardHeader, CardFooter } from './dist';
 
 const meta = {
 	title: 'Componets/Card',
