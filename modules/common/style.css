@@ -2,6 +2,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+:root{
+    color-scheme: light;
 
     /* Alphas */
     --alpha10: 0.10;
@@ -38,21 +42,15 @@
     --primary-hsl-dark: var(--primary-hue), calc(var(--primary-staturation) / 2), calc(var(--primary-luminosity) * 1.3);
 
      /* text colors dark */
-     --text1-dark: hsl(var(--primary-hue) 15% 85%);
-     --text2-dark: hsl(var(--primary-hue) 5% 65%);
+    --text1-dark: hsl(var(--primary-hue) 15% 85%);
+    --text2-dark: hsl(var(--primary-hue) 5% 65%);
  
      /* Surfeces */
-     --surface1-dark: hsl(var(--primary-hue) 10% 10%);
-     --surface2-dark: hsl(var(--primary-hue) 10% 15%);
-     --surface3-dark: hsl(var(--primary-hue) 5% 20%);
-     --surface4-dark: hsl(var(--primary-hue) 5% 25%);
-     --surface-border-dark: hsl(var(--primary-hue) 10% 30%);
-
-     font-size: calc(15px + 0.3906vw);
-}
-
-:root{
-    color-scheme: light;
+    --surface1-dark: hsl(var(--primary-hue) 10% 10%);
+    --surface2-dark: hsl(var(--primary-hue) 10% 15%);
+    --surface3-dark: hsl(var(--primary-hue) 5% 20%);
+    --surface4-dark: hsl(var(--primary-hue) 5% 25%);
+    --surface-border-dark: hsl(var(--primary-hue) 10% 30%);
 
     /* state color */
     --info-color: hsl(240deg 45% 50%);
@@ -84,8 +82,8 @@
         /* colors */
         --background: var(--surface1-light);
         --border: var(--surface-border-light);
-        --accent: hsl(var(--primary-hsl) var(--alpha90));
-        --accent10: hsl(var(--primary-hsl) var(--alpha10));
+        --accent: hsla(var(--primary-hsl) var(--alpha90));
+        --accent10: hsla(var(--primary-hsl) var(--alpha10));
 
         color: var(--text1-light);
     }
@@ -98,8 +96,8 @@
         /* colors */
         --background: var(--surface2-dark);
         --border: var(--surface-border-dark);
-        --accent: hsl(var(--primary-hsl-dark) var(--alpha90));
-        --accent10: hsl(var(--primary-hsl-dark) var(--alpha10));
+        --accent: hsla(var(--primary-hsl-dark) var(--alpha90));
+        --accent10: hsla(var(--primary-hsl-dark) var(--alpha10));
 
         color: var(--text1-dark);
     }
