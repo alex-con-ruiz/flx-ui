@@ -4,7 +4,7 @@ import { nodeExternalsPlugin } from 'esbuild-node-externals';
 esbuild
 	.build({
 		entryPoints: ['./src/index.ts'],
-		outfile: 'build/index.js',
+		outfile: 'dist/index.js',
 		bundle: true,
 		minify: false,
 		minifyWhitespace: true,
