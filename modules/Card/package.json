@@ -1,5 +1,5 @@
 {
-  "name": "card",
+  "name": "flx-card",
   "version": "0.0.3-alpha.2",
   "description": "Card component",
   "type": "module",
@@ -27,5 +27,5 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "gitHead": "4255acf14550a6c12067de8a46e9bfb8311ae104"
+  "gitHead": "ba5af55b6c64dc6bce2018cd20e1f2e717822302"
 }
