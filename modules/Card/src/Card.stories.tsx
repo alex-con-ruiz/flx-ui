@@ -1,9 +1,9 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-// import {Card, CardContent, CardHeader, CardFooter } from './index';
-import { Card, CardContent, CardHeader, CardFooter } from '../dist';
-import '../dist/index.css';
+import {Card, CardContent, CardHeader, CardFooter } from './index';
+/* import { Card, CardContent, CardHeader, CardFooter } from '../dist';
+import '../dist/index.css'; */
 
 const meta = {
 	title: 'Componets/Card',
@@ -159,11 +159,10 @@ export const withFooter: Story = {
 
 export const withHeaderAndFooter: Story = {
 	render: (args) => <Card {...args}>
-		<CardHeader title="Card Title" />
+		<CardHeader title="PAyaso Title" />
 		<CardContent>
 			<span>This is a Card and can be used to order o hightlight infomation on your page</span>
 		</CardContent>
 		<CardFooter link={{ href: 'https//:www.google.com', text: 'Link to href', isBlank: true }}></CardFooter>
 	</Card>,
 };
-

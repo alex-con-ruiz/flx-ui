@@ -22,8 +22,8 @@
     /* Theme */
 
     /* Light */
-    --picker: hsl(184deg 60% 43%);
-    --primary-hue: 184;
+    --picker: hsl(339deg, 60%, 43%);
+    --primary-hue: 339;
     --primary-staturation: 60%;
     --primary-luminosity: 50%;
     --primary-hsl: var(--primary-hue), var(--primary-staturation), var(--primary-luminosity);
